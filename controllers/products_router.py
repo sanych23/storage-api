@@ -3,7 +3,7 @@ from fastapi import Depends
 from typing import Annotated
 from db.database import session_maker
 from db.models import Product
-from dto.ProductDTO import ProductDTO
+from serializers.ProductDTO import ProductDTO
 
 
 router = APIRouter(

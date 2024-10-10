@@ -3,6 +3,12 @@ from db.models import Order, StatusOrder, Product
 from datetime import datetime
 from typing import List
 
+
+class ProductOrderCreateDTO(BaseModel):
+    product_id: int
+    quantity: int
+
+
 class StatusOrderDTO(BaseModel):
     id: int
     name: str    
